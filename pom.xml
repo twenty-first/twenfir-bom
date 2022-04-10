@@ -7,6 +7,7 @@
     <groupId>io.github.twenty-first</groupId>
     <artifactId>twenfir-bom</artifactId>
     <version>0.0.1-SNAPSHOT</version>
+    <packaging>pom</packaging>
 
     <name>Twenty-First BOM</name>
     <description>
