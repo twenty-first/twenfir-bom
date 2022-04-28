@@ -31,6 +31,7 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.version>1.8</java.version>
+        <antlr.version>4.6</antlr.version>
         <logback.version>1.2.11</logback.version>
     </properties>
 
@@ -51,7 +52,7 @@
              <dependency>
                 <groupId>org.antlr</groupId>
                 <artifactId>antlr4</artifactId>
-                <version>4.6</version>
+                <version>${antlr.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.slf4j</groupId>
@@ -70,6 +71,22 @@
         <pluginManagement>
             <plugins>
                 <plugin>
+                    <groupId>org.antlr</groupId>
+                    <artifactId>antlr4-maven-plugin</artifactId>
+                    <version>${antlr.version}</version>
+                    <executions>
+                        <execution>
+                            <goals>
+                                <goal>antlr4</goal>
+                            </goals>
+                        </execution>
+                    </executions>
+                    <configuration>
+                        <listener>true</listener>
+                        <visitor>true</visitor>
+                    </configuration>
+                </plugin>
+                    <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-compiler-plugin</artifactId>
                     <version>3.10.1</version>
