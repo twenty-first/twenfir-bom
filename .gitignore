@@ -7,4 +7,4 @@ gen/
 /.settings/
 .antlr/
 META-INF/
-
+release.properties
