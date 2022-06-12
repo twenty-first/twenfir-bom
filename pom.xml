@@ -63,13 +63,6 @@
                 <artifactId>slf4j-api</artifactId>
                 <version>1.7.36</version>
             </dependency>
-            <!--
-            <dependency>
-                <groupId>junit</groupId>
-                <artifactId>junit</artifactId>
-                <version>4.13.1</version>
-            </dependency>
-            -->
             <dependency>
                 <groupId>org.junit.jupiter</groupId>
                 <artifactId>junit-jupiter-api</artifactId>
@@ -122,6 +115,14 @@
                             <include>**/*IntegrationTests.java</include>
                         </includes>
                     </configuration>
+                    <executions>
+                        <execution>
+                            <goals>
+                                <goal>integration-test</goal>
+                                <goal>verify</goal>
+                            </goals>
+                        </execution>
+                    </executions>
                 </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
