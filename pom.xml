@@ -4,7 +4,7 @@
 
     <groupId>it.twenfir</groupId>
     <artifactId>twenfir-bom</artifactId>
-    <version>0.0.5-SNAPSHOT</version>
+    <version>0.0.5</version>
     <packaging>pom</packaging>
 
     <name>Twenty-First BOM</name>
@@ -236,6 +236,6 @@
         <connection>scm:git:git@github.com:twenty-first/twenfir-bom.git</connection>
         <developerConnection>scm:git:git@github.com:twenty-first/twenfir-bom.git</developerConnection>
         <url>https://github.com/twenty-first/twenfir-bom.git</url>
-      <tag>HEAD</tag>
+      <tag>v0.0.5</tag>
   </scm>
 </project>
