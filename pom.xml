@@ -199,8 +199,8 @@
                     <version>1.7.0</version>
                     <extensions>true</extensions>
                     <configuration>
-                        <serverId>ossrh</serverId>
-                        <nexusUrl>https://s01.oss.sonatype.org/</nexusUrl>
+                        <serverId>central</serverId>
+                        <nexusUrl>https://central.sonatype.com/</nexusUrl>
                         <autoReleaseAfterClose>false</autoReleaseAfterClose>
                     </configuration>
                   </plugin>              
